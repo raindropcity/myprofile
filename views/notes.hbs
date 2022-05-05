@@ -1,0 +1,81 @@
+<main>
+  <section class="section sec4" id="blogs">
+    <!-- 放筆記 -->
+    <div class="blogs-content">
+      <div class="main-title">
+        <h2>My <span>Notes</span></h2>
+      </div>
+      <div class="blogs">
+        <div class="blog">
+          <img src="/img/snow_boy.jpg" alt="">
+          <div class="blog-text">
+            <h4>
+              Notes: My Profile
+            </h4>
+            <p>
+              Software engineers explore the world without paper and pens. In the situation that needs to introduce the
+              self-experience, it absolutely has to be in a cool way. Then I got rid of the paperwork and tried to build a website
+              displaying myself. This project takes the advantage of MacLinz's online course
+              . I learned many front-end skills built by HTML, CSS & JS and didn't take
+              the help of Bootstrap intentionally while constructing my own site. Of course, I tried to change some codes to make this
+              site connect to the database MongoDB and run properly in Node.js
+            </p>
+          </div>
+        </div>
+        <div class="blog">
+          <img src="/img/todo_list.jpg" alt="">
+          <div class="blog-text">
+            <h4>
+              Notes: Todo List
+            </h4>
+            <p>
+              Todo list is a classic project to practice the concept of RESTful, building routes, and operating the database. I spent
+              much time learning the skills while coding. The main acquisition I got is how to save some time by using Node.js and
+              modules provided in npm; using middlewares in Express set the routes by CRUD semantically. Last but not least, operating
+              MongoDB by the methods in Mongoose spurred me to learn the concept of Promise in JS.
+            </p>
+          </div>
+        </div>
+        <div class="blog">
+          <img src="/img/movie_list.jpg" alt="">
+          <div class="blog-text">
+            <h4>
+              Notes: Movie List
+            </h4>
+            <p>
+              I started coding at an online platform like codepen or Replit. Then learned using Node.js, terminal, and VScode as the
+              development environment & tools. Movie list is my very first attempt using the tools mentioned above.
+            </p>
+          </div>
+        </div>
+      </div>
+      {{!-- modal --}}
+      {{!-- <div class="modal">
+        <div class="modal-content">
+          <p class="modal-text">
+
+          </p>
+        </div>
+      </div> --}}
+    </div>
+  </section>
+</main>
+
+<!-- 右側fixed button -->
+<div class="controlls">
+  <a href="/myprofile" class="control control-1" data-id="home">
+    <i class="fas fa-home"></i>
+  </a>
+  <a href="/myprofile/aboutme" class="control control-2" data-id="about">
+    <i class="fas fa-user"></i>
+  </a>
+  <a href="/myprofile/portfolio" class="control control-3" data-id="portfolio">
+    <i class="fas fa-briefcase"></i>
+  </a>
+  <a href="/myprofile/notes" class="control control-4  active-btn" data-id="blogs">
+    <i class="far fa-newspaper"></i>
+  </a>
+  <a href="/myprofile/contactme" class="control control-5" data-id="contact">
+    <i class="fas fa-envelope-open"></i>
+  </a>
+</div>

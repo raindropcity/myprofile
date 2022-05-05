@@ -1,0 +1,141 @@
+<main>
+  <section class="section sec5 contact" id="contact">
+    <div class="contact-container">
+      <div class="main-title">
+        <h2>Contact <span>Me</span></h2>
+      </div>
+      <div class="contact-content-con">
+        <div class="left-contact">
+          <h4>Contact me here</h4>
+          <p>
+            Lorizzle ipsum bling bling sit amizzle, consectetuer adipiscing elit. Nizzle sapien velizzle, bling bling
+            volutpat, suscipit , gravida vel, arcu. Check it out hizzle that's the shizzle.
+          </p>
+          <div class="contact-info">
+            <hr>
+            <div class="contact-item">
+              <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Location :</span>
+              </div>
+              <p>
+                <span>Taipei, Taiwan</span>
+              </p>
+            </div>
+            <hr>
+            <div class="contact-item">
+              <div class="icon">
+                <i class="fas fa-envelope"></i>
+                <span>Email :</span>
+              </div>
+              <p>
+                <span>raindropcity0209@gmail.com</span>
+              </p>
+            </div>
+            <hr>
+            <div class="contact-item">
+              <div class="icon">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Education :</span>
+              </div>
+              <p>
+                <span>Master's - NCCU Land Economy</span>
+              </p>
+            </div>
+            <hr>
+            <div class="contact-item">
+              <div class="icon">
+                <i class="fas fa-phone-alt"></i>
+                <span>Mobile Number :</span>
+              </div>
+              <p>
+                <span>0936539639</span>
+              </p>
+            </div>
+            <hr>
+            <div class="contact-item">
+              <div class="icon">
+                <i class="fas fa-comment"></i>
+                <span>Languages :</span>
+              </div>
+              <p>
+                <span>Mandarin, English</span>
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="contact-icons">
+            <div class="contact-icon">
+              <a href="#" target="_blank">
+                <!--記得給網址-->
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="contact-icon">
+              <a href="#" target="_blank">
+                <!--記得給網址-->
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="right-contact">
+          <form action="/myprofile/contactme" method="POST" class="contact-form">
+            <div class="input-control">
+              <span>{{contactSucceed}}</span>
+              <input type="text" required placeholder="YOUR NAME" name="name" id="name" value="{{inputedContent.name}}">
+              {{#if warning}}
+              <p>{{warning.name}}</p>
+              {{/if}}
+            </div>
+            <div class="input-control">
+              <input type="text" required placeholder="YOUR EMAIL" name="email" id="email"
+                value="{{inputedContent.email}}">
+              {{#if warning}}
+              <p>{{warning.email}}</p>
+              {{/if}}
+            </div>
+            <div class="input-control">
+              <input type="text" required placeholder="ENTER SUBJECT" name="subject" id="subject"
+                value="{{inputedContent.subject}}">
+              {{#if warning}}
+              <p>{{warning.subject}}</p>
+              {{/if}}
+            </div>
+            <div class="input-control">
+              <textarea name="content" id="content" cols="15" rows="8"
+                placeholder="Message For Me...">{{inputedContent.content}}</textarea>
+              {{#if warning}}
+              <p>{{warning.content}}</p>
+              {{/if}}
+            </div>
+            <div class="submit-btn-div">
+              <button type="submit" class="submit-btn">
+                <span>Submit</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 右側fixed button -->
+<div class="controlls">
+  <a href="/myprofile" class="control control-1" data-id="home">
+    <i class="fas fa-home"></i>
+  </a>
+  <a href="/myprofile/aboutme" class="control control-2" data-id="about">
+    <i class="fas fa-user"></i>
+  </a>
+  <a href="/myprofile/portfolio" class="control control-3" data-id="portfolio">
+    <i class="fas fa-briefcase"></i>
+  </a>
+  <a href="/myprofile/notes" class="control control-4" data-id="blogs">
+    <i class="far fa-newspaper"></i>
+  </a>
+  <a href="/myprofile/contactme" class="control control-5  active-btn" data-id="contact">
+    <i class="fas fa-envelope-open"></i>
+  </a>
+</div>

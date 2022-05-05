@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "self introduction",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ray",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.0",
+    "express-handlebars": "^5.3.5",
+    "express-validator": "^6.14.0",
+    "mongoose": "^6.3.1",
+    "nodemon": "^2.0.15"
+  }
+}
