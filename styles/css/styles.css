@@ -1242,10 +1242,16 @@ section {
     padding: 7rem 11rem;
   }
   header {
-    padding: 0 !important;
+    padding: 3rem !important;
   }
   .header-content .right-header {
     padding-right: 0;
+  }
+  .header-content .right-header h1 {
+    padding-right: 2.5rem;
+  }
+  .header-content .right-header p {
+    padding-right: 3rem;
   }
   .main-title h2 {
     font-size: 4rem;
