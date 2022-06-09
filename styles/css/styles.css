@@ -573,12 +573,16 @@ section {
   width: 70%;
 }
 
+.about-stats .progress-bars .progress-bar .progress-con .progress .react {
+  width: 50%;
+}
+
 .about-stats .progress-bars .progress-bar .progress-con .progress .nodejs {
   width: 65%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .express {
-  width: 75%;
+  width: 65%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .mongodb {
