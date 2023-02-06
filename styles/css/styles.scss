@@ -65,7 +65,7 @@ header {
   // inherit;
 }
 
-section{
+section {
   min-height: 100vh;
   width: 100%;
   position: absolute;
@@ -79,11 +79,12 @@ section{
   // transition: all .4s ease-in-out;
   background-color: var(--color-primary);
   animation: slideAnim 1s ease;
+
   @keyframes slideAnim {
     0% {
       transform: translateY(-100%);
     }
-  
+
     100% {
       transform: translateY(0);
     }
@@ -418,6 +419,11 @@ section{
       font-size: 2rem;
       text-transform: uppercase;
     }
+
+    .highlight {
+      font-size: 1.5rem;
+      color: var(--color-secondary);
+    }
   }
 }
 
@@ -467,11 +473,11 @@ section{
 
           .html {
             // 再抓各個class name，依據每種語言個別設定熟練百分比(也就是綠色部分的span寬度)
-            width: 70%;
+            width: 80%;
           }
 
           .css3 {
-            width: 60%;
+            width: 80%;
           }
 
           .javascript {
@@ -479,15 +485,15 @@ section{
           }
 
           .react {
-            width: 50%;
+            width: 60%;
           }
 
           .nodejs {
-            width: 65%;
+            width: 70%;
           }
 
           .express {
-            width: 65%;
+            width: 70%;
           }
 
           .mongodb {
@@ -714,7 +720,7 @@ section{
         background-color: var(--color-grey-5);
       }
 
-      h4 {
+      a {
         font-size: 1.5rem;
         margin-bottom: .7rem;
         transition: all .4s ease-in-out;
@@ -905,7 +911,7 @@ section{
 }
 
 // 以下為.theme-btn(切換主題顏色)的樣式
-.theme-btn {
+.language-btn {
   position: fixed;
   top: 5%;
   right: 3%;
@@ -926,10 +932,22 @@ section{
   }
 
   i {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: var(--color-grey-2);
     pointer-events: none; // 預設為auto，若設定為none代表可以「穿透」點擊到後面的元素
   }
+}
+
+.Ch-language {
+  display: none;
+}
+
+.language-hidden {
+  display: none;
+}
+
+.language-show-up {
+  display: inline-block;
 }
 
 // 匯入(import)控制響應式網頁的檔案(./_media.scss)。記得要在最後引入!!

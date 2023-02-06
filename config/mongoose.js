@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 // 取得資料庫連線狀態
 const db = mongoose.connection
 // 這邊路徑代表透過環境參數process.env.MONGODB_URI取用Heroku中所設定的MONGODB_URI，若沒有拿到，則在主機建立一個名為「todo_list」的database。因此去Robo 3T 中看資料庫時，會看到有個叫todo_list的database。
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/my_profile'
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://todolistreact:learnreact@cluster0.apubehn.mongodb.net/todolist_react?retryWrites=true&w=majority'
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 

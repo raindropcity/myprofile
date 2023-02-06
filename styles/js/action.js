@@ -3,6 +3,7 @@ const secBtns = document.querySelector('.controlls')
 const secBtn = document.querySelectorAll('.control')
 const allSections = document.querySelector('.main-content')
 const themeBtn = document.querySelector('.theme-btn')
+const LanBtn = document.querySelector('.language-btn')
 
 function PageTransitions() {
   // Click btn to add the className: active-btn
@@ -28,11 +29,26 @@ function PageTransitions() {
   })
 }
 
-function changeThemeColor() {
-  // 轉換主題顏色(使用toggle)
-  themeBtn.addEventListener('click', function EventHandler() {
-    const HTMLbody = document.body // 抓HTML的body元素出來
-    HTMLbody.classList.toggle('light-mode') // 點擊時，為此元素的className加上.light-mode，再次點擊時，移除.light-mode
+// function changeThemeColor() {
+//   // 轉換主題顏色(使用toggle)
+//   themeBtn.addEventListener('click', function EventHandler() {
+//     const HTMLbody = document.body // 抓HTML的body元素出來
+//     HTMLbody.classList.toggle('light-mode') // 點擊時，為此元素的className加上.light-mode，再次點擊時，移除.light-mode
+//   })
+// }
+
+const EnLanguage = document.querySelectorAll('.En-language')
+const ChLanguage = document.querySelectorAll('.Ch-language')
+function changeLanguage() {
+  LanBtn.addEventListener('click', function EventHandler() {
+    EnLanguage.forEach((each) => {
+      each.classList.toggle('language-hidden')
+    })
+    ChLanguage.forEach((each) => {
+      each.classList.toggle('language-show-up')
+    })
+    // EnLanguage.classList.toggle('language-hidden')
+    // ChLanguage.classList.toggle('language-show-up')
   })
 }
 
@@ -94,5 +110,6 @@ function switchHeaderPhoto() {
 }
 
 // PageTransitions()
-changeThemeColor()
+// changeThemeColor()
 switchHeaderPhoto()
+changeLanguage()
